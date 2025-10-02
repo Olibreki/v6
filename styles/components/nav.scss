@@ -1,0 +1,24 @@
+/**
+ * Valmynd.
+ */
+
+@use "../config.scss" as config;
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100vw;
+  height: config.$height-nav;
+  background-color: config.$color-background-primary;
+  border-bottom: config.$border-nav;
+}
+
+nav ul {
+  display: flex;
+  gap: calc(config.$spacing * 2);
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}

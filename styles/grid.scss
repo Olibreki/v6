@@ -39,3 +39,24 @@
     background-size: var(--grid-background-width) 100%;
   }
 }
+
+.container {
+  width: calc(100% - (2 * #{config.$offset}));
+  max-width: config.$max-width;
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+  gap: config.$gutter;
+}
+
+.grid-#{config.$columns} {
+  grid-template-columns: repeat(#{config.$columns}, 1fr);
+}
+
+@for $i from 1 through config.$columns {
+  .span-#{$i} {
+    grid-column: span #{$i};
+  }
+}

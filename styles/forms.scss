@@ -1,0 +1,52 @@
+/**
+ * Form stílar.
+ */
+
+@use "./config.scss" as config;
+
+form {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(config.$columns, 1fr);
+  gap: config.$gutter;
+  width: 100%;
+}
+
+fieldset {
+  grid-column: span 12;
+  border: 0;
+}
+
+fieldset legend {
+  margin-bottom: config.$spacing;
+  font-size: 1.5rem;
+}
+
+fieldset div {
+  width: 100%;
+  margin-bottom: config.$spacing;
+}
+
+fieldset div label {
+  display: block;
+}
+
+fieldset div span {
+  display: block;
+  margin-top: calc(config.$spacing / 2);
+}
+
+fieldset input,
+fieldset select,
+fieldset textarea {
+  width: 100%;
+  padding: calc(config.$spacing / 2);
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+fieldset input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+  margin-right: calc(config.$spacing / 2);
+}

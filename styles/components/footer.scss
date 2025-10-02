@@ -1,0 +1,17 @@
+/**
+ * Fótur.
+ */
+
+@use "../config.scss" as config;
+
+footer {
+  display: grid;
+  justify-items: center;
+  padding-top: config.$spacing;
+  padding-bottom: config.$spacing;
+  background-color: config.$color-accent;
+}
+
+footer ul {
+  list-style: none;
+}

@@ -1,0 +1,15 @@
+/**
+ * Haus.
+ */
+
+@use "../config.scss" as config;
+
+header {
+  margin-top: config.$vertical-space;
+  text-align: center;
+}
+
+header h1 {
+  font-size: calc(config.$font-size-headings * 2);
+  text-transform: uppercase;
+}

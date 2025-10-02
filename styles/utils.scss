@@ -1,0 +1,15 @@
+/**
+ * Hjálparklasar.
+ */
+@use "./config.scss" as config;
+
+.text-center { text-align: center; }
+.hidden { display: none !important; }
+
+.mt-1 { margin-top: .25rem; }
+.mt-2 { margin-top: .5rem; }
+.mt-3 { margin-top: 1rem; }
+
+.p-1 { padding: .25rem; }
+.p-2 { padding: .5rem; }
+.p-3 { padding: 1rem; }

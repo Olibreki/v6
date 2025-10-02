@@ -1,0 +1,25 @@
+/**
+ * Töflur.
+ */
+
+@use "./config.scss" as config;
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  margin-bottom: config.$spacing;
+  border-spacing: 0;
+}
+
+table th,
+table td {
+  padding: calc(config.$spacing / 2);
+  text-align: left;
+}
+
+table tbody tr:nth-child(2n + 1) {
+  background-color: config.$color-accent;
+}
